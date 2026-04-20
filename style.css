@@ -1,24 +1,21 @@
-{
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 body {
   font-family: Arial, sans-serif;
   background-color: #d9d5c8;
 }
 
-
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #d9d5c8;
   padding: 15px 20px;
+  background: #d9d5c8;
 }
-
 
 .left-icons {
   display: flex;
@@ -28,8 +25,8 @@ body {
 .circle {
   width: 45px;
   height: 45px;
-  background-color: #4b3566;
-  color: #d4b84c;
+  background: #4b3566;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,11 +34,10 @@ body {
   font-weight: bold;
 }
 
-
 .nav {
   display: flex;
   gap: 20px;
-  background-color: #4b3566;
+  background: #4b3566;
   padding: 12px 25px;
   border-radius: 30px;
 }
@@ -51,15 +47,140 @@ body {
   font-size: 14px;
 }
 
-
 .title {
   font-size: 20px;
   font-weight: bold;
   color: #7a6f86;
 }
 
-
-.main {
+.hero {
   height: 500px;
-  background-color: #4b3566;
+  background: #4b3566;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero span {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero button {
+  padding: 10px 25px;
+  background: #f2c26b;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.features {
+  padding: 40px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 30px;
+  color: #4b3566;
+}
+
+.triangles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  position: relative;
+  text-align: center;
+}
+
+.triangle span {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  color: white;
+  font-size: 28px;
+}
+
+.triangle p {
+  position: absolute;
+  top: 70px;
+  left: -70px;
+  width: 140px;
+  color: white;
+  font-size: 12px;
+}
+
+.blue {
+  border-bottom: 140px solid #9db0d6;
+}
+
+.green {
+  border-bottom: 140px solid #8bbf6a;
+}
+
+.yellow {
+  border-bottom: 140px solid #e6b85c;
+}
+
+.measurements {
+  background: #4b3566;
+  color: #d9d5c8;
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  background: #eee;
+  color: black;
+  margin: 20px auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 40px;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form input {
+  padding: 8px;
+  width: 200px;
+}
+
+.form button {
+  padding: 8px 15px;
+  background: #4b3566;
+  color: white;
+  border: none;
+}
+
 }
