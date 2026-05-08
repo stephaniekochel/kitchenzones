@@ -1,22 +1,444 @@
+<!-- index.html -->
 <!DOCTYPE html>
-
+<html>
 <head>
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kitchen Zones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="learnMorePage" class="learnmore-page">
+  <header class="learn-header">
+    <div class="left-icons">
+      <div class="circle" onclick="closeLearnMorePage()">KZ</div>
+      <div class="circle image-circle">
+        <img src="images/cart.PNG" alt="cart">
+      </div>
+    </div>
+
+    <nav class="nav">
+  <div class="nav-item" onclick="openLearnMorePage()">
+  Learn More</div>
+ <div class="nav-item" onclick="openShopPage()">
+  Products
+</div>
+<div class="nav-item" onclick="openTestimonialsPage()">
+  Testimonials
+</div>
+      <div class="nav-item">Start Here</div>
+      <div class="nav-item">About Author</div>
+    </nav>
+
+    <div class="title">Kitchen Zones</div>
+  </header>
+
+  <section class="learn-hero">
+    <h1>Getting in the Zone</h1>
+
+    <div class="learn-box">
+      Breaking down the kitchen into zones directs your focus into each area to assess your families wants and needs for the kitchen remodel.
+    </div>
+
+<div class="learn-grid">
+
+ <div class="learn-zone-item">
+  <div class="triangle-number">1</div>
+  <div class="triangle-shape prep"></div>
+  <p class="prep-text">Prep Zone</p>
+</div>
+
+ <div class="learn-zone-item">
+  <div class="triangle-number">2</div>
+  <div class="triangle-shape cook"></div>
+  <p class="cook-text">Cooking Zone</p>
+</div>
+
+<div class="learn-zone-item">
+  <div class="triangle-number">3</div>
+  <div class="triangle-shape beverage"></div>
+  <p class="beverage-text">Beverage Zone</p>
+</div>
+
+ <div class="learn-zone-item">
+  <div class="triangle-number">4</div>
+  <div class="triangle-shape seating"></div>
+  <p class="seating-text">Seating Zone</p>
+</div>
+
+<div class="learn-zone-item">
+  <div class="triangle-number">5</div>
+  <div class="triangle-shape cleaning"></div>
+  <p class="cleaning-text">Cleaning Zone</p>
+</div>
+
+ <div class="learn-zone-item">
+  <div class="triangle-number">6</div>
+  <div class="triangle-shape pet"></div>
+  <p class="pet-text">Pet Zone</p>
+</div>
+
+</div>
+
+<section class="budget-section">
+
+  <div class="budget-left">
+    <h2>
+      Skip Surprise Costs from contractors with our budgeting plan
+    </h2>
+  </div>
+
+  <div class="budget-right">
+    <img src="images/tree.PNG" alt="Family Triangle">
+  </div>
+
+</section>
+
+<section class="meet-author">
+
+  <div class="meet-left">
+    <h2>Meet The Author</h2>
+
+    <img src="images/priya.jpg" alt="Priya Sankar">
+
+    <h3>Priya Sankar</h3>
+  </div>
+
+  <div class="meet-right">
+    <p>
+      Priya Sankar’s first book developed from her life long passion of cooking and baking. Her time spent in the kitchen helped her when remodeling her own families. However it wasn’t easy. Contractors suggested builds that architects advised against. Finding a contractor and architect who work well together and with you is difficult. With her firsthand experience and love for kitchens, she wrote Kitchen Zones accompanied a helpful workbook.
+    </p>
+  </div>
+
+</section>
+
+<section class="learn-buttons">
+  <button onclick="openShopPage()">Shop Now</button>
+  <button>Take Quiz</button>
+</section>
+
+<section class="newsletter">
+  <h3>Stay in touch with the Author</h3>
+  <p>With our daily newsletter</p>
+
+  <div class="form">
+    <input type="email" placeholder="you@example.com">
+    <button>Submit</button>
+  </div>
+</section>
+
+<footer class="author">
+  <div class="author-content">
+
+    <div class="author-left">
+      <img src="images/priya.jpg" alt="Priya">
+
+      <div>
+        <h3>Priya Sankar</h3>
+        <p>Author</p>
+      </div>
+    </div>
+
+    <div class="author-right">
+
+      <div class="socials">
+        <img src="images/facebook.PNG" alt="Facebook">
+        <img src="images/instagram.PNG" alt="Instagram">
+        <img src="images/twitter.PNG" alt="Twitter">
+        <img src="images/linkedin.PNG" alt="LinkedIn">
+      </div>
+
+      <div class="author-buttons">
+        <button onclick="openShopPage()">Shop Now</button>
+        <button>Take Quiz</button>
+        <button onclick="openLearnMorePage()">Learn More</button>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+  </section>
+</div>
+
+<div id="testimonialsPage" class="testimonials-page">
+
+  <header class="learn-header">
+    <div class="left-icons">
+
+      <div class="circle" onclick="closeTestimonialsPage()">
+        KZ
+      </div>
+
+      <div class="circle image-circle">
+        <img src="images/cart.PNG" alt="cart">
+      </div>
+
+    </div>
+
+    <nav class="nav">
+     <div class="nav-item" onclick="openLearnMorePage()">Learn More</div>
+     <div class="nav-item" onclick="openShopPage()">Products</div>
+      <div class="nav-item" onclick="openTestimonialsPage()">Testimonials</div>
+      <div class="nav-item">Start Here</div>
+      <div class="nav-item">About Author</div>
+    </nav>
+
+    <div class="title">Kitchen Zones</div>
+  </header>
+
+  <section class="reviews-hero">
+
+    <h1>
+      Reviews ★★★★★
+    </h1>
+
+    <div class="reviews-top">
+
+      <img src="images/bookworkbook.PNG" alt="Bundle">
+
+      <div class="reviews-info">
+        <h2>Bundle - Kitchen Zones Book & Kitchen Zones Workbook</h2>
+
+        <p>Description</p>
+        <p>Product information</p>
+      </div>
+
+      <div class="reviews-buttons">
+        <button onclick="openShopPage()">Shop Now</button>
+        <button onclick="openLearnMorePage()">Learn More</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="latest-reviews">
+
+    <h2>Latest reviews</h2>
+
+    <div class="review-cards">
+
+      <div class="review-card">
+        <h3>Holy Grail!!!!</h3>
+        <p>This kept me organized beyond what I imagined!</p>
+        <span>Josh Smith</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Made for everyone</h3>
+        <p>This isn’t about interior design. Its pointing out where to put your focus!</p>
+        <span>Emma Williams</span>
+      </div>
+
+      <div class="review-card">
+        <h3>Saved me BIG</h3>
+        <p>Time or money you name it! This book and workbook is worth every penny!</p>
+        <span>Don Howard</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="quick-shop">
+
+    <h2>Quick Shop</h2>
+
+    <div class="products-row">
+
+      <div class="product-card">
+        <img src="images/book.PNG" alt="Book">
+
+        <div class="product-info">
+          <h3>Kitchen Zones</h3>
+          <div class="stars">★★★★★</div>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/workbook.PNG" alt="Workbook">
+
+        <div class="product-info">
+          <h3>Kitchen Zones Workbook</h3>
+          <div class="stars">★★★★★</div>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="learn-buttons">
+    <button onclick="openShopPage()">Shop Now</button>
+    <button>Take Quiz</button>
+  </section>
+
+  <section class="newsletter">
+    <h3>Stay in touch with the Author</h3>
+    <p>With our daily newsletter</p>
+
+    <div class="form">
+      <input type="email" placeholder="you@example.com">
+      <button>Submit</button>
+    </div>
+  </section>
+
+  <footer class="author">
+
+    <div class="author-content">
+
+      <div class="author-left">
+        <img src="images/priya.jpg" alt="Priya">
+
+        <div>
+          <h3>Priya Sankar</h3>
+          <p>Author</p>
+        </div>
+      </div>
+
+      <div class="author-right">
+
+        <div class="socials">
+          <img src="images/facebook.PNG">
+          <img src="images/instagram.PNG">
+          <img src="images/twitter.PNG">
+          <img src="images/linkedin.PNG">
+        </div>
+
+        <div class="author-buttons">
+          <button onclick="openShopPage()">Shop Now</button>
+          <button>Take Quiz</button>
+          <button onclick="openLearnMorePage()">Learn More</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+<div id="shopPage" class="shop-page">
+
+  <header class="shop-topbar">
+    <div class="left-icons">
+      <div class="circle" onclick="closeShopPage()">KZ</div>
+      <div class="circle image-circle">
+      <img src="images/cart.PNG" alt="logo">
+    </div>
+    </div>
+
+    <nav class="nav">
+ <div class="nav-item" onclick="openLearnMorePage()">Learn More</div>
+ <div class="nav-item" onclick="openShopPage()">Products
+</div>
+   <div class="nav-item" onclick="openTestimonialsPage()">
+  Testimonials</div>
+      <div class="nav-item">Start Here</div>
+      <div class="nav-item">About Author</div>
+    </nav>
+
+    <div class="title">Kitchen Zones</div>
+  </header>
+
+  <section class="featured-wrapper">
+    <h1>Featured ★</h1>
+
+    <div class="featured-layout">
+
+      <div class="featured-left">
+        <img src="images/bookworkbook.PNG" alt="bundle">
+        <span class="offer-tag">Best Offer!</span>
+      </div>
+
+      <div class="featured-middle">
+        <h2>Bundle - Kitchen Zones Book & Kitchen Zones Workbook</h2>
+
+        <div class="stars">★★★★★</div>
+
+        <div class="review-links">
+          <a href="#">Read Reviews</a>
+          <a href="#">Download Free Sample</a>
+        </div>
+
+        <div class="shop-actions">
+          <button>Buy Now</button>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="featured-price">
+        <p>$39.99</p>
+      </div>
+
+      <div class="featured-right">
+        <img src="images/layout.JPG" alt="blueprint">
+      </div>
+
+    </div>
+  </section>
+
+  <section class="see-more">
+    <h2>See more</h2>
+
+    <div class="products-row">
+
+      <div class="product-card">
+        <img src="images/book.PNG" alt="book">
+
+        <div class="product-info">
+          <h3>Kitchen Zones</h3>
+          <div class="stars">★★★★★</div>
+          <a href="#">Read Reviews</a>
+          <a href="#">View Description</a>
+          <a href="#">Download Free Sample</a>
+          <p>$29.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/workbook.PNG" alt="workbook">
+
+        <div class="product-info">
+          <h3>Kitchen Zones Work Book</h3>
+          <div class="stars">★★★★★</div>
+          <a href="#">Read Reviews</a>
+          <a href="#">View Description</a>
+          <a href="#">Download Free Sample</a>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+</div>
+
 <header class="header">
   <div class="left-icons">
     <div class="circle">KZ</div>
-    <div class="circle"></div>
+    <div class="circle image-circle">
+      <img src="images/cart.PNG" alt="logo">
+    </div>
   </div>
 
   <nav class="nav">
-    <div class="nav-item">Learn More</div>
-    <div class="nav-item">Products</div>
-    <div class="nav-item">Testimonials</div>
+<div class="nav-item" onclick="openLearnMorePage()">Learn More</div>
+<div class="nav-item" onclick="openShopPage()">Products</div>
+    <div class="nav-item" onclick="openTestimonialsPage()">
+  Testimonials</div>
     <div class="nav-item">Start Here</div>
     <div class="nav-item">About Author</div>
   </nav>
@@ -24,19 +446,44 @@
   <div class="title">Kitchen Zones</div>
 </header>
 
-
 <section class="hero">
-  <h1>
-    Remodeling advice that thinks about <br>
-    <span>YOU!</span>
-  </h1>
+  <div class="shapes">
+    <div class="shape green"></div>
+    <div class="shape yellow"></div>
+    <div class="shape blue"></div>
+    <div class="shape green small"></div>
+    <div class="shape yellow small"></div>
+    <div class="shape blue small"></div>
+  </div>
 
-  <div class="hero-buttons">
-    <button>Shop Now</button>
-    <button>Learn More</button>
+  <div class="hero-content">
+    <div class="hero-left">
+      <img src="images/home.JPG" alt="kitchen">
+    </div>
+
+    <div class="hero-right">
+      <h1>
+        Remodeling advice that thinks about 
+        <span>YOU!</span>
+      </h1>
+
+      <div class="hero-buttons">
+        <button onclick="openShopPage()">Shop Now</button>
+        <button onclick="openLearnMorePage()">Learn More</button>
+      </div>
+
+      <p class="hero-text">
+        You’ve decided it’s time to remodel your kitchen—or you’re seriously thinking about it. The possibilities are exciting, but the process can quickly become overwhelming. Between design decisions, budgets, contractors, and unexpected surprises, many homeowners feel unprepared for what a kitchen remodel truly involves.
+        </p><p class="hero-text">
+        This step-by-step guide to worry-free kitchen Remodeling helps you approach the process with clarity and confidence.
+      </p>
+
+      <p class="hero-text">
+        Written by an attorney with the perspective of being a homeowner, this practical guide cuts out the sales pitches and gathers advice from unbiased experts to give you a clear roadmap for planning and managing your remodel. You’ll learn how to design a kitchen that works for your family, budget your project wisely, avoid common remodeling mistakes, and hire the right team. The book includes a practical workbook with checklists, worksheets, kitchen layout grids, and budget templates to help plan every step of the way.
+      </p>
+    </div>
   </div>
 </section>
-
 
 <section class="features">
   <h2>Learn the secrets in Priya Sankar’s book.</h2>
@@ -57,18 +504,18 @@
       <p>Build and Stay on Budget</p>
     </div>
   </div>
-</section>
 
+  <div class="triangle-descriptions">
+    <p>By choosing your designs using the Kitchen Zones Concept</p>
+    <p>Screen and hire the right remodeling team for you</p>
+    <p>Keeping you organized with our checklists, templates and grids</p>
+  </div>
+</section>
 
 <section class="measurements">
   <h2>Measurement Recommendations</h2>
-
-  <div class="card">
-    <p>Cabinet Depth — 24"</p>
-    <p>Counter Depth — 25"-26"</p>
-    <p>Clearance in front — 40" min</p>
-    <p>Ideal Aisle Width — 48"-52"</p>
-    <p>Island Width — 60"</p>
+  <div class="image-placeholder">
+    <img src="images/measure.JPG" alt="Measurement Recommendations">
   </div>
 </section>
 
@@ -81,6 +528,64 @@
     <button>Submit</button>
   </div>
 </section>
+
+<section class="author">
+  <div class="author-content">
+    <div class="author-left">
+      <img src="images/priya.jpg" alt="author">
+      <div>
+        <h3>Priya Sankar</h3>
+        <p>Author</p>
+      </div>
+    </div>
+
+    <div class="author-right">
+      <div class="socials">
+        <img src="images/facebook.PNG" alt="Facebook">
+        <img src="images/instagram.PNG" alt="Instagram">
+        <img src="images/twitter.PNG" alt="Twitter">
+        <img src="images/linkedin.PNG" alt="LinkedIn">
+      </div>
+
+      <div class="author-buttons">
+        <button onclick="openShopPage()">Shop Now</button>
+        <button>Take Quiz</button>
+        <button onclick="openLearnMorePage()">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+function openTestimonialsPage() {
+  document.getElementById('testimonialsPage').classList.add('active');
+}
+
+function closeTestimonialsPage() {
+  document.getElementById('testimonialsPage').classList.remove('active');
+}
+
+function openLearnMorePage() {
+  document.getElementById('learnMorePage').classList.add('active');
+}
+
+function closeLearnMorePage() {
+  document.getElementById('learnMorePage').classList.remove('active');
+}
+
+function openShopPage() {
+  document.getElementById('shopPage').classList.add('active');
+}
+
+function closeShopPage() {
+  document.getElementById('shopPage').classList.remove('active');
+}
+
+function goHome() {
+
+}
+</script>
 
 </body>
 </html>
